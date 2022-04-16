@@ -1,0 +1,207 @@
+.title{
+    font-size: 40px;
+}
+
+.subtitle{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#container{
+    animation-duration: 1s;
+    animation-name: slideup;
+    animation-timing-function: ease-in-out;
+    border-radius: 50px;
+    background-color: #ffffff;
+}
+
+.select_box{
+    width: 500px;
+    height: 240px;
+}
+
+button{
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover{
+    animation-name: scale;
+    transform: scale(1.1, 1.1);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#text_button{
+    background-color: #ffffff;
+    border: solid #959595 3px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 7px rgb(160, 160, 160);
+}
+
+#link_button{
+    background-color: #ffffff;
+    border: solid #00d41e 3px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 7px rgb(126, 199, 154);
+}
+
+#wifi_button{
+    background-color: #ffffff;
+    border: solid #005aff 3px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 7px rgb(147, 129, 218);
+}
+
+#wifi_button{
+    background-color: #ffffff;
+    border: solid #005aff 3px;
+    border-radius: 20px;
+}
+
+#text_input_container{
+    border-radius: 50px;
+    background-color: #ffffff;
+    width: 500px;
+    height: 270px;
+    animation-duration: 1s;
+    animation-name: slideup;
+    transition-timing-function: cubic-bezier(0.340, 0.535, 0.000, 0.950);
+}
+
+#link_input_container{
+    border-radius: 50px;
+    background-color: #ffffff;
+    width: 500px;
+    height: 270px;
+    animation-duration: 1s;
+    animation-name: slideup;
+    transition-timing-function: cubic-bezier(0.340, 0.535, 0.000, 0.950);
+}
+
+#wifi_input_container{
+    border-radius: 50px;
+    background-color: #ffffff;
+    width: 500px;
+    height: 490px;
+    animation-duration: 1s;
+    animation-name: slideup;
+    transition-timing-function: cubic-bezier(0.340, 0.535, 0.000, 0.950);
+}
+
+#result_container{
+    border-radius: 50px;
+    background-color: #ffffff;
+    margin-bottom: 50px;
+    width: 500px;
+    height: 470px;
+    animation-duration: 1s;
+    animation-name: slideup;
+    transition-timing-function: cubic-bezier(0.340, 0.535, 0.000, 0.950);
+}
+
+.generate_button{
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(45deg, #8bb1ff, #ff84b1);
+    border: solid #ffffff 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px rgb(119, 119, 119);
+}
+
+.download_button{
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(45deg, #8ff194, #7fdbff);
+    border: solid #ffffff 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px rgba(90, 90, 90, 0.658);
+}
+
+input{
+    text-align: center;
+    font-size: 13px;
+    width: 280px;
+    height: 40px;
+    border-radius: 40px;
+    border: 5px solid transparent;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(45deg, #fbfcb9, #65d3ffaa);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.text_align_center{
+    text-align: center;
+}
+
+.square_box{
+    width: 100px;
+    height: 100px;
+}
+
+.box_shadow{
+    box-shadow: 0px 0px 20px rgb(219, 210, 255);
+}
+
+.text_padding_top{
+    padding-top: 40px;
+}
+
+.disabled{
+    display: none;
+}
+
+@keyframes slideup{
+    from{
+        opacity: 0%;
+        margin-top: 100px;
+    }
+    to{
+        opacity: 100%;
+        margin-top: 0px;
+    }
+}
+
+@keyframes scale{
+    from{
+        transform: scale(1, 1);
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    to{
+        transform: scale(1.1, 1.1);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+#qr_content_wifi_password{
+    margin-left: -30px;
+}
+
+#toggle_password{
+    margin-bottom: -5px;
+    margin-left: -50px;
+}
+
+#is_hide{
+    margin-top: 40px;
+    width: 15px;
+    height: 15px;
+}
+
+.object_align_center{
+    margin:auto;
+    display: flex;
+    justify-content: center;
+}

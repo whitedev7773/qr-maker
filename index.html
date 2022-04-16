@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <title>QR 코드 생성기</title>
+    <link rel="stylesheet" href="./css/pc.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+</head>
+<body>
+    <div>
+        <h1 class="title text_align_center">QR코드 생성기</h1>
+    </div>
+    <div class="object_align_center">
+        <div>
+            <!--코드 타입 선택란-->
+            <div id="container" class="select_box box_shadow">
+                <p class="subtitle text_align_center text_padding_top">어떤 형식의 QR코드를 생성하시겠어요?</p>
+                <div class="text_align_center">
+                    <button id="text_button" class="square_box mouse_overlay"><img id="text_button_image" src="./image/text.png" width="80px"></button>
+                    <button id="link_button" class="square_box mouse_overlay"><img id="link_button_image" src="./image/link.png" width="80px"></button>
+                    <button id="wifi_button" class="square_box mouse_overlay"><img id="wifi_button_image" src="./image/wifi.png" width="80px"></button>
+                </div>
+            </div>
+            <!------------------>
+            
+            <!--텍스트 데이터 입력란-->
+            <div id="text_input_container" class="disabled box_shadow text_align_center">
+                <p class="subtitle text_padding_top">QR코드로 생성할 텍스트 입력</p>
+                <input id="qr_content_text" type="text" placeholder="Hello World!" class="box_shadow">
+                <div>
+                    <button id="generate_qr_text" class="generate_button">QR 생성</button>
+                </div>
+            </div>
+            <!---------------------->
+    
+            <!--링크 데이터 입력란-->
+            <div id="link_input_container" class="disabled box_shadow text_align_center">
+                <p class="subtitle text_padding_top">QR코드로 생성할 링크 입력</p>
+                <input id="qr_content_link" type="url" placeholder="https://whitedev7773.github.io/" class="box_shadow">
+                <div>
+                    <button id="generate_qr_link" class="generate_button">QR 생성</button>
+                </div>
+            </div>
+            <!--------------------->
+    
+            <!--와이파이 데이터 입력란-->
+            <div id="wifi_input_container" class="disabled box_shadow text_align_center">
+                <p class="subtitle text_padding_top">와이파이 이름 입력</p>
+                <input id="qr_content_wifi_name" type="text" placeholder="Wifi Name" class="box_shadow">
+                <p class="subtitle text_align_center text_padding_top">와이파이 비밀번호 입력</p>
+                <input id="qr_content_wifi_password" type="password" placeholder="Wifi Password" class="box_shadow">
+                <img id="toggle_password" src="./image/hide_password.png" width="20px">
+                <div>
+                    <label id="is_hide_text"><input id="is_hide" type="checkbox" name="hide_wifi" value="true"> 숨겨진 와이파이</label>
+                </div>
+                <div>
+                    <button id="generate_qr_wifi" class="generate_button">QR 생성</button>
+                </div>
+            </div>
+            <!----------------------->
+    
+            <!--QR코드 생성 결과-->
+            <div id="result_container" class="disabled box_shadow text_align_center">
+                <p class="subtitle text_padding_top">생성된 QR코드</p>
+                <div id="qrcode">
+                </div>
+                <button id="download" class="download_button" download="https://chart.googleapis.com/chart?cht=qr&chs=200x200&chl=asd">QR코드 저장</button>
+            </div>
+            <!------------------>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
