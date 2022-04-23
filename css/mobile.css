@@ -217,5 +217,10 @@ input{
 }
 
 .copyright{
-    font-size: 30px;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+.developer{
+    font-size: 15px;
 }

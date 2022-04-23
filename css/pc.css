@@ -94,7 +94,7 @@ button:hover{
     background-color: #ffffff;
     margin-bottom: 50px;
     width: 500px;
-    height: 470px;
+    height: 500px;
     animation-duration: 1s;
     animation-name: slideup;
     transition-timing-function: cubic-bezier(0.340, 0.535, 0.000, 0.950);
@@ -115,7 +115,7 @@ button:hover{
 }
 
 .download_button{
-    margin-top: 30px;
+    margin-top: 20px;
     width: 150px;
     height: 50px;
     background: linear-gradient(45deg, #8ff194, #7fdbff);
@@ -204,4 +204,13 @@ input{
     margin:auto;
     display: flex;
     justify-content: center;
+}
+
+.copyright{
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+.developer{
+    font-size: 15px;
 }
